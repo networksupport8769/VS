@@ -21,7 +21,7 @@ if(condition_emer == null){
 //alert(condition_emer+'condition');
 
 
-	$(document).off('click', '#pate_enter_but').on('click', '#pate_enter_but', function() {
+$(document).off('click', '#pate_enter_but').on('click', '#pate_enter_but', function() {
 //alert('condition emergency but clcik');
 
  var pat_name = document.getElementById('pat_name').value;
@@ -37,12 +37,14 @@ if(condition_emer == null){
 /*alert(lat_hosp+'lat_hosp');
 alert(long_hosp+'long_hosp');*/
 
-   //alert(pat_name+'pat_name');
-/*
- alert(pat_name+'pat_name');
+//alert(pat_name+'pat_name');
+
+ /*
+  alert(pat_name+'pat_name');
   alert(age_nn+'age_nn');
   alert(gender_d+'gender_d');
-  alert(mob_no+'mob_no');*/
+  alert(mob_no+'mob_no');
+  */
 if(pat_name != ""){
 
   $.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
@@ -81,6 +83,7 @@ for(a=0;a<patient_detaias_array.length;a++){
 //alert(navigator.geolocation+'2');
 //alert("3");
 //alert(navigator.geolocation.getCurrentPosition+'4 watchPosition');
+
    navigator.geolocation.getCurrentPosition(onSuccess, onError);  
 //alert('as');
       function onSuccess(position) {
