@@ -55,11 +55,32 @@ var painstrtt3 = $('input:radio[name=cpainc]:checked').val();  //15
 var painstrtt4 = $('input:radio[name=cpaind]:checked').val();		//16
 //alert(painstrtt4+'painstrtt4     4');
 
-var painstrtt5 = $('input:radio[name=cpaine]:checked').val();  //1
-//alert(painstrtt5+'painstrtt5    5');
+   var cpaine = [];
+   $.each($("input[name='cpaine']:checked"), function(){            
+                cpaine.push($(this).val());
+            });
+   //alert("My favourite sports 1 1 1 are: " + favorite.join(", "));
 
-var painstrtt6 = $('input:radio[name=cpainf]:checked').val();    //18
-//alert(painstrtt6+'painstrtt6');
+var cpain= cpaine[0];
+var cpain1= cpaine[1];
+var cpain2= cpaine[2];
+var cpain3= cpaine[3];
+var cpain4= cpaine[4];
+//alert(cpain4+'cpain4');
+
+var cpainf = [];
+   $.each($("input[name='cpainf']:checked"), function(){            
+                cpainf.push($(this).val());
+            });
+   //alert("My favourite sports 18 18 18 are: " + favorite.join(", "));
+
+var cpai= cpainf[0];
+var cpai1= cpainf[1];
+var cpai2= cpainf[2];
+var cpai3= cpainf[3];
+//alert(cpai3+'cpai3');
+
+
 var painstrtt7 = $('input:radio[name=cpaing]:checked').val();	//19
 //alert(painstrtt7+'painstrtt7');
 var painstrtt8 = $('input:radio[name=cpainh]:checked').val(); 	//5
@@ -122,7 +143,7 @@ var formData = $("#callAjaxFormradio").serialize();
 
 $.ajax({
   type: "POST",
-url: "http://staging.eimpressive.com/slim/slim-heart-mergedb-resg/inser_radio.php?chstpain="+chstpain+"&painstrttt="+painstrttt+"&painstrtt3="+painstrtt3+"&painstrtt4="+painstrtt4+"&painstrtt5="+painstrtt5+"&painstrtt6="+painstrtt6+"&painstrtt7="+painstrtt7+"&painstrtt8="+painstrtt8+"&painstrtt9="+painstrtt9+"&painstrtt10="+painstrtt10+"&pat_id_lasts="+pat_id_lasts+"&far="+far+"&far1="+far1+"&far2="+far2+"&far3="+far3+"&far4="+far4+"&fara="+fara+"&far1a="+far1a+"&far2a="+far2a+"&far3a="+far3a+"&far4a="+far4a+"&far5a="+far5a+"&painstrtt13="+painstrtt13+"&painstrtt1011="+painstrtt1011+"&painstrtt1012="+painstrtt1012+"&painstrtt10111="+painstrtt10111,
+url: "http://staging.eimpressive.com/slim/slim-heart-mergedb-resg/inser_radio.php?chstpain="+chstpain+"&painstrttt="+painstrttt+"&painstrtt3="+painstrtt3+"&painstrtt4="+painstrtt4+"&cpain="+cpain+"&cpain1="+cpain1+"&cpain2="+cpain2+"&cpain3="+cpain3+"&cpain4="+cpain4+"&cpai="+cpai+"&cpai1="+cpai1+"&cpai2="+cpai2+"&cpai3="+cpai3+"&painstrtt7="+painstrtt7+"&painstrtt8="+painstrtt8+"&painstrtt9="+painstrtt9+"&painstrtt10="+painstrtt10+"&pat_id_lasts="+pat_id_lasts+"&far="+far+"&far1="+far1+"&far2="+far2+"&far3="+far3+"&far4="+far4+"&fara="+fara+"&far1a="+far1a+"&far2a="+far2a+"&far3a="+far3a+"&far4a="+far4a+"&far5a="+far5a+"&painstrtt13="+painstrtt13+"&painstrtt1011="+painstrtt1011+"&painstrtt1012="+painstrtt1012+"&painstrtt10111="+painstrtt10111,
   data: formData,
   success: onSuccessyu,
   async: 'true',

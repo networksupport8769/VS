@@ -30,6 +30,7 @@ $(document).off('click', '#pate_enter_but').on('click', '#pate_enter_but', funct
  var age_kg_w = document.getElementById('age_kg_w').value;
  var gender_d = $('input:radio[name=gender_de]:checked').val();
   var mob_no = document.getElementById('mob_no').value;
+  var moblen = mob_no.length;
 
 
 
@@ -45,7 +46,11 @@ alert(long_hosp+'long_hosp');*/
   alert(gender_d+'gender_d');
   alert(mob_no+'mob_no');
   */
-if(pat_name != ""){
+  if(moblen != 10){
+    alert("Fill contact details properly" );
+    $.mobile.changePage($('#cond_patient_details'), { transition: "none", changeHash: true, reverse: false });
+  }
+else if(pat_name != ""){
 
   $.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
   options.async = true;

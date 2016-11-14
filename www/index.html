@@ -63,11 +63,7 @@ function onBackKeyDown() {
 				<nd2-include data-src=".//examples/fragments/bottom.sheet.html"></nd2-include>
 			</div>
 
-			<!-- <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
-				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
-				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Page Title</h1>
-			</div>-->
+			
 			<div role="main" class="ui-content main-top" data-inset="false" >
 			
 				<div class="main-both1">&nbsp;</div>
@@ -172,7 +168,7 @@ function onBackKeyDown() {
  <label  for="textarea2b" class="fnt1 lega rwa" >Patient  Name</label>
   <div  style="width: 99%;" class="fnt2" id="" ></div>
 
-    <textarea  style="background-color: #ffffff !important;"cols="40" rows="8" name="name2" id="pat_name" value="" placeholder="Patient  Name"></textarea>
+    <textarea  style="background-color: #ffffff !important;"cols="40" rows="8" name="name2" id="pat_name" value="" placeholder="Patient Name"></textarea>
 
 
 </div>
@@ -201,7 +197,7 @@ function onBackKeyDown() {
 </div>
 
     <br>
-<div class="row " style="margin-left:5px;margin-right:5px">
+<div class="row" style="margin-left:5px;margin-right:5px">
  <label  for="textarea2b" class="fnt1 lega rwa" >Patient  Weight (in kg)</label>
   <div  style="width: 99%;" class="fnt2" id="" ></div>
 
@@ -215,7 +211,7 @@ function onBackKeyDown() {
 
  <div class="ui-grid-b select_agea">
   <div class="row " style="margin-left:5px;margin-right:5px">
- <label  for="textarea2b" class="fnt1 lega rwa" >Patient  Gender</label>
+ <label  for="textarea2b" class="fnt1 lega rwa" >Patient Gender</label>
         <fieldset data-role="controlgroup">                 
       
         <div class="ui-block-a medilef" style="margin-left:30px">
@@ -224,7 +220,7 @@ function onBackKeyDown() {
          </div>
         <div class="ui-block-b medilef" style="margin-left:30px">
           <input type="radio" name="gender_de" id="radio-choice-2b" value="female">
-           <label for="radio-choice-2b" class="select_agelab bg-radio-col uiradbac" >Female</label> 
+           <label for="radio-choice-2b" class="select_agelab bg-radio-col uiradbac">Female</label> 
         </div>          
         </fieldset> 
         </div>
@@ -482,6 +478,14 @@ margin-top: -1em;
     padding-top: 15px;
     padding-bottom: 15px
 }
+.lab2{
+    background-color: #3E6771 !important;
+    /*background-color: #1E5A69 !important;*/
+    color: white !important;
+    border: solid 1px #151922 !important;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
 </style>
 <style type="text/css">
     html .ui-page-theme-a .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
@@ -642,20 +646,20 @@ margin-top: -1em;
                             <legend class="fnt1 leg">5.How is Chest pain ?</legend>
                            <div  class="fnt2" id="" ></div>
                        
-                            <input type="radio" name="cpaine" id="cpainaa11" value="46" checked="checked">
+                            <input type="checkbox" name="cpaine" id="cpainaa11" value="46" checked="">
 
                             <label  for="cpainaa11" class="waves-effect lab">Crushing - tightening with a rope</label>
 
-                            <input type="radio" name="cpaine" id="cpainaa12" value="47">
+                            <input type="checkbox" name="cpaine" id="cpainaa12" value="47">
 
                             <label  for="cpainaa12" class="waves-effect lab">Heaviness - pressing with a heavy weight</label>
-                            <input type="radio" name="cpaine" id="cpainaa13" value="48">
+                            <input type="checkbox" name="cpaine" id="cpainaa13" value="48">
                             <label  for="cpainaa13" class="waves-effect lab">Burning - acid burn</label>
 
-                            <input type="radio" name="cpaine" id="cpainaa14" value="49">
+                            <input type="checkbox" name="cpaine" id="cpainaa14" value="49">
                             <label for="cpainaa14" class="waves-effect lab">Sharp - stabbing with knife / pins</label>
 
-                              <input type="radio" name="cpaine" id="cpainaa15" value="90">
+                              <input type="checkbox" name="cpaine" id="cpainaa15" value="90">
                             <label for="cpainaa15" class="waves-effect lab">Does the pain spread to shoulder / neck / hands / back</label>
                         
                            
@@ -669,19 +673,19 @@ margin-top: -1em;
                             <legend class="fnt1 leg">6.Is the pain relieved by any of the following ?</legend>
                            <div  class="fnt2" id="" ></div>
                        
-                            <input type="radio" name="cpainf" id="cpaina15" value="91" checked="checked">
+                            <input type="checkbox" name="cpainf" id="cpaina15" value="91" checked="checked">
 
                             <label for="cpaina15" class="lab waves-effect">resting - sitting / lying down</label>
 
-                            <input type="radio" name="cpainf" id="cpaina16" value="92">
+                            <input type="checkbox" name="cpainf" id="cpaina16" value="92">
 
                             <label  for="cpaina16" class="waves-effect lab">Isordil tablet / NTG spray</label>
 
-                            <input type="radio" name="cpainf" id="cpaina17" value="93">
+                            <input type="checkbox" name="cpainf" id="cpaina17" value="93">
 
                             <label  for="cpaina17" class="waves-effect lab">Drinking. warm water</label>
 
-                              <input type="radio" name="cpainf" id="cpaina18" value="94">
+                              <input type="checkbox" name="cpainf" id="cpaina18" value="94">
 
                             <label  for="cpaina18" class="waves-effect lab">Taking ant acid Tablet/ gel</label>
                     
@@ -845,8 +849,8 @@ margin-top: -1em;
  <div class="row rw" >
  
                         <fieldset data-role="controlgroup" style="width: 100%;">
-                            <legend class="fnt1 leg" >14.Do you have these risk factors?</legend>
-                              <div  class="fnt2" id="" ></div>
+                            <legend class="fnt1 leg">14.Do you have these risk factors?</legend>
+                            <div class="fnt2" id=""></div>
                             <input type="checkbox" name="painstrtt11" id="checkbox-1ab" value="71" checked="">
                             <label class="lab waves-effect " for="checkbox-1ab">Diabetes</label>
                             <input type="checkbox" name="painstrtt11" id="checkbox-2ab" value="72">
@@ -865,8 +869,8 @@ margin-top: -1em;
  <div class="row rw" >
  
                         <fieldset data-role="controlgroup" style="width: 100%;">
-                            <legend class="fnt1 leg" >15.Previous Medical History?</legend>
-                              <div  class="fnt2" id="" ></div>
+                            <legend class="fnt1 leg">15.Previous Medical History?</legend>
+                            <div  class="fnt2" id=""></div>
                             <input type="checkbox" name="painstrtt12" id="checkbox-1abw" value="76" checked="">
                             <label  class="lab waves-effect " for="checkbox-1abw">Angina / heart problems</label>
                             <input type="checkbox" name="painstrtt12" id="checkbox-2abw" value="77">
@@ -902,7 +906,7 @@ margin-top: -1em;
  <label  for="textarea2b" class="fnt1 leg rw" >Any Operations</label>
   <div  style="width: 99%;" class="fnt2" id="" ></div>
 
-    <textarea  style="background-color: #ffffff !important;"cols="40" rows="8" name="anyop" id="anyop" placeholder="Any Operations"></textarea>
+    <textarea  style="background-color: #ffffff !important;" cols="40" rows="8" name="anyop" id="anyop" placeholder="Any Operations"></textarea>
 
 
 </div>
@@ -960,22 +964,10 @@ margin-top: -1em;
 
 <!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"> -->
 <!-- <link rel="stylesheet" href="css/my.css"> -->
-    <link href="css/uploadfilemulti.css" rel="stylesheet">
+<!-- <link href="css/uploadfilemulti.css" rel="stylesheet"> -->
 <script src="js/jquery.fileuploadmulti.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.js"></script>
-<style type="text/css">
-   div.upload {
-     width: 50px !important;
-    height: 50px !important;
-    background: url(../www/images/primary/qwe.png);
-    /* background-color: red; */
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-}
-</style>
-<!-- <script src="js/map.js"></script> -->
-			<!-- <nd2-include data-src=".//examples/fragments/panel.left.html"></nd2-include> -->
+ 
 
 	    <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
         <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
@@ -984,7 +976,7 @@ margin-top: -1em;
         <h1 class="wow fadeIn" data-wow-delay='0.4s'>My Heart</h1>
       </div>
 
-			<div role="main" class="ui-content full" data-inset="false" id="main">
+	<div role="main" class="ui-content full" data-inset="false" id="main">
 
 
 
@@ -992,42 +984,40 @@ margin-top: -1em;
 <div data-role="popup" id="popupPhotoPortrait" class="photopopup imj " data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
 </div>
 
- <div class="row " style="margin-left:5px;margin-right:5px">
- <label  for="textarea2b" class="fnt1 lega rwa" >upload any of the reports, </label>
- <div style="float:left">
-  <label  for="textarea2b" class="fnt1 lega rwa" >1.ECG  </label>
-  <label  for="textarea2b" class="fnt1 lega rwa" >3.Chest X - Ray </label>
- </div>
-  <div style="float:left">
-  <label  for="textarea2b" class="fnt1 lega rwa" >2.Blood tests - Troponin </label>
-  <label  for="textarea2b" class="fnt1 lega rwa" >4.Echo  </label>
- </div>
- <br>
- </div>
+ <div class="row center-xs" style="padding-bottom: 60px;">
+    <div class="col-xs-12">
+        <div class="box">
+           <!-- <div style="background-color: rgb(239, 239, 239);
+padding: 15px;"><span style="font-weight: bold;font-size: 20px;">Upload Documents</span>
+<div style="clear:both;height:0px;">&nbsp;</div>
+<br>(&nbsp;ECG,&nbsp; X-Ray ,&nbsp;Blood Test&nbsp;-Troponin,&nbsp;Echo ) </div> -->
+        </div>
+    </div>
+</div>
 
-<div id="chatr">
+<div class="row center-xs">
+    <div class="col-xs-12">
+      <div id="mulitplefileuploader"><img src="images/upload-img.JPG"></div>
+    </div>
+</div>
 
 </div>
 
-  <div class="upload_box">
- <div class="ui-grid-a">
- <div class="ui-block-a" style="width:15%;">
-<div class="upload" id="mulitplefileuploader">
-      
-
-
-    </div>
-    </div>
-    </div>
+<div class="row center-xs" style="padding-top: 70px;">
+ <div class="col-xs-12">
+    <div class="box">
+         
+    
 </div>
+
+</div></div>
+
+
 <!-- <div id="status"></div> -->
 <!--upload end-->
 
 
-<!-- <div style="margin-top:50px;margin-left:20%;margin-right:20% ">
-<a href="" class="txt-dec">  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;" id="sear_Addre" > </a>
-<a href="#search_near_twokm" class="txt-dec" id="" >  <input type="button" value="SEARCH NEARBY LOCATION" style="border: solid 2px #00BBD3;opacity: inherit; border-radius: 0px;color:red !important" > </a>
-</div> -->
+
 
 <div style="float:center;margin-left:25%;margin-right:25%">
 <a href="#search_near_twokm" class="txt-dec" id="" > <button class="search_near_by_buttt">Submit</button></a>
@@ -1040,6 +1030,44 @@ margin-top: -1em;
 
  <div data-role="page" id="search_near_twokm" >
 <script type="text/javascript" src="js/search_near_twokm.js"></script>
+<link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+<link rel="stylesheet" href="css/material-design-iconic-font.css" />
+<style type="text/css">
+      .nd2-card .card-title .card-subtitle {
+    font-size: 14px;
+    margin: 0px;
+    color: #8e8e8e;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 75%;
+    overflow: hidden;
+     white-space:inherit;
+ 
+}
+
+.nd2-card .card-title .card-primary-title 
+{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 90%;
+    overflow: hidden;
+   white-space:inherit;;
+    text-overflow: ellipsis;
+}
+.nd2-card {
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin: 15px auto;
+    max-width: 98%;
+    overflow: hidden;
+}
+.bgc{
+        background-color: #00a3b5;
+    }
+  </style>
 <!-- <script src="js/map.js"></script> -->
 
 			<!-- <nd2-include data-src=".//examples/fragments/panel.left.html"></nd2-include> -->
@@ -1069,29 +1097,39 @@ margin-top: -1em;
 <ul data-role="listview" data-icon="false" id="cadd">
   
 
-
-      </ul>
-
-</div>
-
-
-
+</ul>
 
 </div>
+
+</div>
+</div>
+
+<div data-role="popup" id="myPopup2da" class="ui-content" data-dismissible="false" >
+	<div data-role="header">
+        <h1 class='nd-title'>Doctors Profile</h1>
+    </div>
+    <div data-role="content">
+	    <div class="ui-block-a"> 
+	        <div class="ui-grid-solo">
+				<form action="" id="callAjaxFormdoc">
+			      <ul data-role="listview" data-icon="false" id="docdis">
+			          
+			      </ul>
+			    </form>
+
+			</div>
+		</div>
+	</div>
+
+    <div style="float:center;margin-left:25%;margin-right:25%">
+    	<a href="#" class="txt-dec" id="docvieok"><button class="search_near_by_buttt">OK</button></a>
+    </div>
+
 </div>
 
 </div>
 
 <!--Page four end-->
-
-
-
-
-
-
-		
-	
-		
 
 		<script src="vendor/waves/waves.min.js"></script>
 		<script src="vendor/wow/wow.min.js"></script>
